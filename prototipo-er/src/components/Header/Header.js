@@ -17,13 +17,7 @@ import {
 
 import { RiContactsBookLine } from "react-icons/ri";
 
-export default function Header() {
-
-  const [sideBar, setSideBar] = useState(false)
-
-  const showSideBar = () => {
-    setSideBar(!sideBar)
-  }
+export default function Header({sideBar,setSideBar,showSideBar}) {
 
   const menuList = [
     { "id": 1, "option": "Home", "route": "/", "icon": FaHome },

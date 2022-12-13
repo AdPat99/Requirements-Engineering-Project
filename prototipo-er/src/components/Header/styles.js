@@ -4,7 +4,7 @@ export const Container = styled.div`
     height:50px;
     display: flex;
     background-color:#6fa8dc;
-    box-shadow:0 0 20px 3px;
+    box-shadow:0 0 5px 1px;
 
     >svg{
         position: fixed;
