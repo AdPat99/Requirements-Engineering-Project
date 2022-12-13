@@ -15,7 +15,6 @@ export default function SideBar({ active, menuList }) {
   })
 
   return (
-
     <Container sideBar={active}>
       <FaTimes onClick={closeSideBar} />
       <Content>
