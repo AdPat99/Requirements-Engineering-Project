@@ -30,6 +30,10 @@ export const Container = styled.div`
             width: 250;
         }
     }
+
+    a {
+        text-decoration: none; /* no underline */
+    }
 `;
 
 export const Content = styled.div`

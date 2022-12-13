@@ -5,7 +5,7 @@ import { Container } from './styles'
 export default function SideBarItem({ active, Icon, text, link }) {
     function closeSideBar() {
         active(false)
-      }
+    }
     return (
         <Link to={link}>
             <Container onClick={closeSideBar}>
