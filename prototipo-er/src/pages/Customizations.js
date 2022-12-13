@@ -1,4 +1,4 @@
-import React,{useRef,useEffect,useState} from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { Container, Box, SubTitle, SwitchText } from './styles'
 
 export default function Customizations({ active }) {
@@ -24,9 +24,8 @@ export default function Customizations({ active }) {
           </SwitchText>
           <SwitchText>
             <label>
-            <input ref={temperature} onChange={handleChange} type="range" name="myInput"  step="1" min="15" max="38" />
+              <input ref={temperature} onChange={handleChange} type="range" name="myInput" step="1" min="15" max="38" />
             </label>{temp}º
-
           </SwitchText>
         </Box>
       </Container>

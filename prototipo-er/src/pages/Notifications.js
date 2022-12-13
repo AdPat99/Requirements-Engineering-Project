@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Box, SubTitle, SwitchText } from './styles'
 
-export default function Notifications({active}) {
+export default function Notifications({ active }) {
   return (
     <>
       <Container active={active}>
