@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Container } from './styles'
+import { Container,Title } from './styles'
 import { FaBars } from 'react-icons/fa'
 import SideBar from '../SideBar/SideBar'
+import { Routes, Route } from 'react-router-dom'
 
 import {
   FaHome,
@@ -36,6 +37,14 @@ export default function Header() {
   return (
     <Container>
       <FaBars onClick={showSideBar} />
+      <Routes>
+            <Route path="/" exact element={<Title>Home</Title>}/>
+            <Route path="/calender" exact element={<Title>Calender</Title>}/>
+            <Route path="/contacts" exact element={<Title>Priority Contacts</Title>}/>
+            <Route path="/customizations" exact element={<Title>Customizations</Title>}/>
+            <Route path="/notifications" exact element={<Title>Notifications</Title>}/>
+            <Route path="/route" exact element={<Title>Route</Title>}/>
+      </Routes>
       {sideBar && <SideBar active={setSideBar} menuList={menuList} />}
     </Container>
   )

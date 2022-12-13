@@ -16,3 +16,12 @@ export const Container = styled.div`
         cursor:pointer;
     }
 `;
+
+export const Title =  styled.div`
+    display: flex;
+    font-size: 26px;
+    padding: 4px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 50px 20px;
+`;
