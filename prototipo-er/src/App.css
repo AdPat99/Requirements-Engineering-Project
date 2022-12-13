@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.arrowbut {
+  width: 200px;
+  margin: 0 auto;
+  display: inline;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;}
+
+.callbtn {width: 200px;
+  margin: 0 auto;
+  display: inline;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;}
+
+  .btn{
+
+    background-color: rgb(0, 255, 213);
+    
+    }
+
+    .btn:active{
+
+      background-color: rgb(17, 22, 180);
+      
+      }
