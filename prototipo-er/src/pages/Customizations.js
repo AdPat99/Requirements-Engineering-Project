@@ -12,9 +12,25 @@ export default function Customizations({ active }) {
 
   return (
     <>
-      <h1>Customizations</h1>
         <button>Playlist</button>
-        <button>AC temperature</button>
+        <Container active={active}>
+        <Box>
+          <SubTitle>Custom temperature</SubTitle>
+          <SwitchText>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+            </label>
+            AC
+          </SwitchText>
+          <SwitchText>
+            <label>
+            <input ref={temperature} onChange={handleChange} type="range" name="myInput"  step="1" min="15" max="38" />
+            </label>{temp}º
+
+          </SwitchText>
+        </Box>
+      </Container>
     </>
   )
 }
