@@ -44,13 +44,15 @@
   padding: 10px;
 }
 
-.grid-item {
+.griditem {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
+
+.griditem:hover{ background-color: rgb(0, 76, 175);}
 
 .arrowbut {
   width: 200px;
@@ -78,3 +80,4 @@
       background-color: rgb(17, 22, 180);
       
       }
+
