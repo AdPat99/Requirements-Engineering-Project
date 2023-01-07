@@ -1,9 +1,14 @@
 import React from 'react'
+
 function addContact() {
+    
+let n= document.getElementById("num");
 document.getElementById("list").innerHTML +=
-            "<span>Name - Number </span>"+
+            "<div class='contact list'>"+
+            "<span>Marcus Spinel - 170871049</span>"+
             " <button class='callbtn'>Call</button> "
-            +" <button class='callbtn'>Delete contact</button>"; 
+            +" <button class='callbtn'>Delete contact</button>"
+            +"</div>";
 }
 function remContact() {
     let element = document.getElementById();
@@ -37,15 +42,10 @@ export default function Contacts() {
             <button class='callbtn'>Delete contact</button>
         </div>
 </div>
-<p>Add contact</p>
-<div><form name="frm1" method="post" onsubmit="return addContact()">
-<label for="name">Contact Name:</label>
-    <input type="text" name="name"></input>
-    <label for="number">Contact Number:</label>
-        <input type="text" name ="number"></input>
-    <input type="submit" value="Submit"></input>
-</form>
-</div>
+<h2>New contact</h2>
+<p>Name: Marcus Spinel</p>
+<p>Number: 170871049</p>
+<button onClick={addContact}>Add contact</button>
     </body>
     </>
   )
