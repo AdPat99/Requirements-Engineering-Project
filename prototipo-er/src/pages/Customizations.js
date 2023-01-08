@@ -10,9 +10,35 @@ export default function Customizations({ active }) {
     setTemp(temperature.current.value);
   }
 
+  function addSong() {
+    document.getElementById("list").innerHTML +=
+                "<div class='listitem'>"+
+                "<span> Saved song 4 </span>"+
+                "<button class='listbtn'>Play file</button>"
+                +"<button class='listbtn'>Remove file</button>"
+                +"</div>";
+    }
+
+  function rem1() {
+    let element = document.getElementById("1");
+element.remove();
+}
+
+function rem2() {
+    let element = document.getElementById("2");
+element.remove();
+}
+function rem3() {
+    let element = document.getElementById("3");
+element.remove();
+}
+function rem4() {
+    let element = document.getElementById("4");
+element.remove();
+}
+
   return (
     <>
-        <button>Playlist</button>
         <Container active={active}>
         <Box>
           <SubTitle>Custom temperature</SubTitle>
@@ -31,6 +57,37 @@ export default function Customizations({ active }) {
           </SwitchText>
         </Box>
       </Container>
+
+      <h1>Playlist</h1>
+<div id="list">
+        <div id="1" class='listitem'>
+            <span> Song 1 </span>
+            <button class='listbtn'>Play file</button>
+            <button class='listbtn' onClick={rem1}>Remove file</button>
+        </div>
+        <div id="2" class='listitem'>
+            <span> Song 2 </span>
+            <button class='listbtn'>Play file</button>
+            <button class='listbtn' onClick={rem2}>Remove file</button>
+        </div>
+        <div id="3" class='listitem'>
+            <span> Song 3 </span>
+            <button class='listbtn'>Play file</button>
+            <button class='listbtn' onClick={rem3}>Remove file</button>
+        </div>
+        <div id="4" class='listitem'>
+            <span> Song 4 </span>
+            <button class='listbtn'>Play file</button>
+            <button class='listbtn' onClick={rem4}>Remove file</button>
+        </div>
+</div>
+<h2>Add media</h2>
+<p>Saved song 1</p>
+<p>Saved song 2</p>
+<p>Saved song 3</p>
+<p>-Saved song 4-(selected)</p>
+<p>Saved song 5</p>
+<button onClick={addSong}>Add Song</button>
     </>
   )
 }
