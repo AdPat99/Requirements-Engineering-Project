@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, 
+  Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
 import Calender from './pages/Calender';
 import Contacts from './pages/Contacts';
@@ -8,13 +9,17 @@ import Customizations from './pages/Customizations';
 import Notifications from './pages/Notifications';
 import RouteGPS from './pages/Route';
 import React, { useState } from 'react';
+import VoiceRecognition from './pages/voicerec';
 
 function App() {
+
+
   const [sideBar, setSideBar] = useState(false)
 
   const showSideBar = () => {
     setSideBar(!sideBar)
   }
+
 
   return (
     <>
@@ -28,11 +33,14 @@ function App() {
             <Route path="/customizations" exact element={<Customizations active={sideBar} />} />
             <Route path="/notifications" exact element={<Notifications active={sideBar} />} />
             <Route path="/route" exact element={<RouteGPS />} />
+            <Route path="/voiceRec" exact element={<VoiceRecognition />} />
           </Routes>
         </>
       </Router>
     </>
   );
+
 }
+
 
 export default App;

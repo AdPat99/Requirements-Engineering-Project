@@ -26,6 +26,7 @@ export default function Header({ sideBar, setSideBar, showSideBar }) {
     { "id": 4, "option": "Calender", "route": "/calender", "icon": FaCalendarAlt },
     { "id": 5, "option": "Priority Contacts", "route": "/contacts", "icon": RiContactsBookLine },
     { "id": 6, "option": "Customizations", "route": "/customizations", "icon": MdOutlineDashboardCustomize },
+    { "id": 7, "option": "Voice Recognition", "route": "/voicerec", "icon": MdOutlineDashboardCustomize },
   ]
 
   return (
@@ -38,6 +39,7 @@ export default function Header({ sideBar, setSideBar, showSideBar }) {
         <Route path="/customizations" exact element={<Title>Customizations</Title>} />
         <Route path="/notifications" exact element={<Title>Notifications</Title>} />
         <Route path="/route" exact element={<Title>Route</Title>} />
+        <Route path="/voicerec" exact element={<Title>Voice Recognition</Title>} />
       </Routes>
       {sideBar && <SideBar active={setSideBar} menuList={menuList} />}
     </Container>
