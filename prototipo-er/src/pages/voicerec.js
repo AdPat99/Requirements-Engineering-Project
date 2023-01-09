@@ -24,8 +24,10 @@ export default function Voicerec() {
         </ul>
 
         <br></br><br></br><br></br><br></br>
-        <p>Please note, this function is not complete, the user may enter locations and the map can be interacted with,
-          but the fields are there for demonstration puroses only</p>
+        <p>The upper links above represent the functions the application would lead the user to,</p><br></br>
+        <p>given the following phrases:"direct me", "set AC temperature", "Play/stop/skip song". </p><br></br>
+        <p>A page for voice recognition would not exist in a release meant for a customer.</p><br></br>
+        <p>This is just meant to demonstrate the functionality. </p>
       </div>
     </>
   )
